@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+</head>
+<body>
+    <header>
+        <h1>Movie</h1>
+    </header>
+
+    <section>
+        <h2>Title</h2>
+        <p id="title"></p>
+        <h2>Director</h2>
+        <p id="director"></p>
+        <h2>Release Year</h2>
+        <p id="releaseYear"></p>
+        <h2>Actors</h2>
+        <ul id="actors"></ul>
+    </section>
+    <script>
+        // Your JavaScript code to get the movie data and display it on the page goes here
+        function getMovie() {
+            // Make the GET request to your Spring Boot back-end
+            fetch('http://localhost:8080/movies/1')
+                .then(response => response.json())
+                .then(data => {
+                    // Display the response in the browser
+                    let movie = data;
+                    let output = '';
+                    output += `<li>${movie.title}</li>`;
+                    document.getElementById('title').innerHTML = output;
+                    output += `<li>${movie.director}</li>`;
+                    document.getElementById('director').innerHTML = output;
+                    output += `<li>${movie.releaseYear}</li>`;
+                    document.getElementById('releaseYear').innerHTML = output;
+                    output += `<li>${movie.actors}</li>`;
+                    document.getElementById('actors').innerHTML = output;
+                });
+        }
+    </script>
+</body>
+</html>
