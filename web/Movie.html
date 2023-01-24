@@ -7,7 +7,7 @@
     <script>
       function getMovies() {
         // Make the GET request to your Spring Boot back-end
-        fetch('http://localhost:8080/movies')
+        fetch('http://localhost:8080/movies/search?title=Matrix')
           .then(response => response.json())
           .then(data => {
             // Display the response in the browser
