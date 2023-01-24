@@ -1,14 +1,9 @@
 # Project
 
-`Introduction`: This is my first repository on GitHub. A simple web application that allows users to search for and view information about movies or books could be implemented using a variety of programming languages, depending on the specific requirements of the project and your own personal preferences. Some popular choices for building web applications include: 
+`Introduction`: This is my first repository on GitHub. A simple web application that allows users to search for and view information about movies could be implemented using a variety of programming languages, depending on the specific requirements of the project and your own personal preferences. Some popular choices for building web applications include: 
 
-- `JavaScript`, using a framework such as React or AngularJS for the front-end and Node.js for the back-end.
 
-- `Python`, using a web framework such as Flask or Django for the back-end and JavaScript for the front-end.
-
-- `Ruby`, using a web framework such as Ruby on Rails for the back-end and JavaScript for the front-end.
-
-- `Java`, using a web framework such as Spring or Play for the back-end and JavaScript for the front-end.
+- `Java`, using a web framework such as Spring for the back-end and JavaScript for the front-end.
 
 It's important to consider the specific requirements of the project, such as performance and scalability, as well as your own experience and comfort level with the language before making a decision.
 
@@ -34,11 +29,11 @@ It's a good idea to also create a .gitignore file to ignore files that are speci
 
 `Java`: 
 
-* To create a simple web application that allows users to search for and view information about movies or books, you may need to add the following classes:
+* To create a simple web application that allows users to search for and view information about movies, you may need to add the following classes:
 
-- A class that represents the movie or book (e.g. Movie.java or Book.java)
-- A class that handles the database operations (e.g. MovieRepository.java or BookRepository.java)
-- A class that handles the business logic for the application (e.g. MovieService.java or BookService.java)
-- A class that handles the web request and response (e.g. MovieController.java or BookController.java)
+- A class that represents the movie (e.g. Movie.java)
+- A class that handles the database operations (e.g. MovieRepository.java)
+- A class that handles the business logic for the application (e.g. MovieService.java)
+- A class that handles the web request and response (e.g. MovieController.java)
 - You might also need to add classes to handle exceptions, security, and other functionality depending on the requirements of your application.
 
