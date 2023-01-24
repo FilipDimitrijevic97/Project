@@ -31,3 +31,14 @@ It's important to consider the specific requirements of the project, such as per
 8. Push your local repository to the remote repository on GitHub when you are ready to share your code with others or when you want to save your progress.
 
 It's a good idea to also create a .gitignore file to ignore files that are specific to your local environment, such as target folders or IDE specific files. And also to create a README file to explain what your project does and how to use it.
+
+`Java`: 
+
+* To create a simple web application that allows users to search for and view information about movies or books, you may need to add the following classes:
+
+- A class that represents the movie or book (e.g. Movie.java or Book.java)
+- A class that handles the database operations (e.g. MovieRepository.java or BookRepository.java)
+- A class that handles the business logic for the application (e.g. MovieService.java or BookService.java)
+- A class that handles the web request and response (e.g. MovieController.java or BookController.java)
+- You might also need to add classes to handle exceptions, security, and other functionality depending on the requirements of your application.
+
