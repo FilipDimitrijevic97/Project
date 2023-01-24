@@ -22,6 +22,12 @@
     </section>
     <script>
         // Your JavaScript code to get the movie data and display it on the page goes here
+        function getMovie();
+
+        /**
+         * This function gets the movie data from the Spring Boot back-end
+         * and displays it on the page.
+         */
         function getMovie() {
             // Make the GET request to your Spring Boot back-end
             fetch('http://localhost:8080/movies/1')
