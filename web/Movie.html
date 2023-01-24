@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getMovies() {
+        // Make the GET request to your Spring Boot back-end
+        fetch('http://localhost:8080/movies/search?title=Matrix')
+          .then(response => response.json())
+          .then(data => {
+            // Display the response in the browser
+            let movies = data;
+            let output = '';
+            for (let i in movies) {
+              output += `<li>${movies[i].title}</li>`;
+            }
+            document.getElementById('movies').innerHTML = output;
+          });
+      }
+    </script>
+  </head>
+  <body onload="getMovies()">
+    <h1>Movies</h1>
+    <ul id="movies"></ul>
+  </body>
+</html>
