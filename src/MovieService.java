@@ -8,16 +8,17 @@ import java.util.List;
  * or to retrieve information about a specific movie or book.
  */
 
-@Service
-public class MovieService {
-    private final MovieRepository movieRepository;
-    
-    public MovieService(MovieRepository movieRepository) {
-        this.movieRepository = movieRepository;
-    }
-    
-    public List<Movie> findMoviesByTitle(String title) {
-        return movieRepository.findByTitle(title);
-    }
-}
+ @Service
+ public class MovieService {
+     private final MovieRepository movieRepository;
+ 
+     public MovieService(MovieRepository movieRepository) {
+         this.movieRepository = movieRepository;
+     }
+ 
+     public List<Movie> findMoviesByTitle(String title) {
+         return movieRepository.findByTitle(title);
+     }
+ }
+ 
 
