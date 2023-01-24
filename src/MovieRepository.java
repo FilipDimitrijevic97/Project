@@ -1,3 +1,5 @@
+package Users.filipdimitrijevic.KTH.project.Project.src;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

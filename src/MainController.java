@@ -1,3 +1,5 @@
+package Users.filipdimitrijevic.KTH.project.Project.src;
+
 @RestController
 public class MainController {
     @GetMapping("/")
